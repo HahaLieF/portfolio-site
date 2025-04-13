@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="icon" href= "https://img.icons8.com/color/48/portfolio.png" sizes="32x32">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header id="header">
+        <div class="language_change wrapper">
+            <span class="japanese">
+                <a rel="alternate" href="#" title="日本語" id="lang-ja">日本語</a>
+            </span>
+            <span class="english">
+                <a rel="alternate" href="#" title="英語" id="lang-en">English</a>
+            </span>
+        </div>
+
+        <button id="js-hamburger" class="nav_toggle_mobile">
+            <div class="hamburger_bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+
+        <nav class="hamburger_menu_mobile">
+            <h2 class="logo_mobile">
+                <img src="images/logo.png" alt="サイトロゴ">
+            </h2>
+            <ul>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navigation wrapper">
+            <h2 class="logo_image">
+                <img src="images/logo.png" alt="デスクトップロゴ">
+            </h2>
+            <ul class="nav_list">
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">link</a></li>
+            </ul>
+        </nav>
+
+        <div id="js-fade-slideshow" class="fade_slideshow">
+            <div class="fade_slide_container">
+                <div class="fade_slide_track">
+                    <div class="fade_slide">
+                        <img src="images/fadeSlideshowImage①.jpg" alt="">
+                        <img src="images/fadeSlideshowImage②.jpg" alt="">
+                        <img src="images/fadeSlideshowImage③.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="slider" class="slider">
+        <div id="slide-button" class="slide_button">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+        <div class="slide_wrapper">
+            <div class="slide_container">
+                <div class="slide_track">
+                    <div class="slides_image">
+                        <img src="images/fadeSlideshowImage①.jpg" alt="">
+                    </div>
+                    <div class="slides_image">
+                        <img src="images/fadeSlideshowImage②.jpg" alt="">
+                    </div>
+                    <div class="slides_image">
+                        <img src="images/fadeSlideshowImage④.jpg" alt="">
+                    </div>
+                    <div class="slides_image">
+                        <img src="images/fadeSlideshowImage③.jpg" alt="">
+                    </div>
+                    <div class="slides_image">
+                        <img src="images/fadeSlideshowImage⑤.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="indicator">
+                <li class="list_01 active"></li>
+                <li class="list_02"></li>
+                <li class="list_03"></li>
+                <li class="list_04"></li>
+                <li class="list_05"></li>
+            </div>
+        </div>
+    </div>
+
+
+    <main id="main" class="wrapper">
+        <section id="learning">
+            <h2 class="sec_title"  data-role="translateble" data-key="text1">学習内容</h2>
+            <div class="learning_wrap">
+                <div class="studying_content">
+                    <img src="images/HTML5のロゴアイコン.jpeg" alt="HTMLのアイコン">
+                    <img src="images/CSSアイコン.jpeg" alt="cssのアイコン">
+                    <img src="images/JSicon.jpeg" alt="javaScriptのアイコン">
+                </div>
+
+                <div class="learning_overflow">
+                    <h2 data-role="translateble" data-key="text2">現在勉強しているJavaScriptの内容</h2>
+                    <div class="learning_lists">
+                        <div class="text_area scroll_target">
+                            <ul class="text_list">
+                                <li class="text"  data-role="translateble" data-key="text3">JavaScriptの基本構文</li>
+                                <li class="text"  data-role="translateble" data-key="text4">DOM操作</li>
+                                <li class="text"  data-role="translateble" data-key="text5">スライダーの実装</li>
+                                <li class="text"  data-role="translateble" data-key="text6">フェードインアニメーションの実装</li>
+                                <li class="text"  data-role="translateble" data-key="text7">処理の流れや変数の役割を理解しながらのコーディング</li>
+                            </ul>
+                        </div>
+                        <img src="images/learningSectionImage①.jpg" alt="セクション区切り画像" class="list_separator_image scroll_target">
+                    </div>
+
+                    <h2  data-role="translateble" data-key="text8">今後学ぶ予定の内容</h2>
+                    <div class="hereafter_lists">
+                        <div class="text_area scroll_target">
+                            <ul class="text_list">
+                                <li class="text"  data-role="translateble" data-key="text9">非同期処理（fetch / API連携）</li>
+                                <li class="text"  data-role="translateble" data-key="text10">状態管理の基礎</li>
+                                <li class="text"  data-role="translateble" data-key="text11">Reactなどのフレームワーク</li>
+                                <li class="text"  data-role="translateble" data-key="text12">実用的なアプリケーション制作</li>
+                            </ul>
+                        </div>
+                        <img src="images/learningSectionImage②.jpg" alt= "" class="list_separator_image scroll_target">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <footer id="footer">
+        <div class="footer_inner wrapper">
+            <p>&copy; 2025 YourName</p>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+    </footer> 
+    <script src ="js/language.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/fadeinslide.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/scrollanim.js"></script>
+</body>
+</html>
