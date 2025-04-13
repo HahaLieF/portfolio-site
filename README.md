@@ -52,18 +52,18 @@
 - 将来的には、ReactやVueなどのフレームワークを用いた構築にも挑戦したい
 
 
-## 公開サイト
+<!-- ## 公開サイト
 
 GitHub Pagesで公開しています。ぜひご覧ください👇  
-🔗 https://hahalief.github.io/portfolio-site/
+🔗 https://hahalief.github.io/portfolio-site/ -->
 
 ## スクリーンショット
 
 ### PC表示
-![PC表示](./images/screenshot-pc.png)
+![PC表示](./readme-assets/screenshot-pc.png)
 
 ### タブレット表示
-![タブレット表示](./images/screenshot-tablet.png)
+![タブレット表示](./readme-assets/screenshot-tablet.png)
 
 ### スマートフォン表示
-![スマートフォン表示](./images/screenshot-sp.png)
+![スマートフォン表示](./readme-assets/screenshot-sp.png)
