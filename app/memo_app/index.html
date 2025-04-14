@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メモアプリ</title>
+    <style>
+        /* =============================
+        ページ全体の基本デザイン
+        ============================= */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        
+        /* =============================
+        入力欄のスタイル
+        ============================= */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* =============================
+        ボタンのスタイル
+        ============================= */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* =============================
+        メモリストのスタイル
+        ============================= */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s, 
+            background-color 0.3s;
+        }
+
+        li:hover {
+            background-color: #e9f7ef;
+            transform: translateY(-3px);
+        }
+
+        strong {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <!--ページのメインタイトル-->
+    <h1>メモアプリ</h1>
+
+    <!-- メモのタイトルと内容の入力欄 -->
+    <input type="text" id="memoTitle" placeholder="メモのタイトル">
+    <input type="text" id="memoContent" placeholder="メモの内容">
+    <!-- メモを保存するボタン -->
+    <button onclick="saveMemo()">メモを追加</button>
+    
+    <!-- 保存されたメモの一覧表示 -->
+    <h2>メモ一覧</h2>
+    <ul id="memoList"></ul>
+
+    <!-- メモ機能のJavaScriptを読み込み -->
+    <script src="memo.js"></script>
+</body>
+</html>
+
