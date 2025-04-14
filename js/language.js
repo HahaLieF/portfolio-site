@@ -1,5 +1,5 @@
 (function languageInit () {
-    //複数言語の切り替え
+    //複数言語の切り替えのテキストデータ(日本語・英語)
     const translationLanguage = {
         textArea_ja: {
             text1:'学習内容',
@@ -30,20 +30,19 @@
             text12:'Creating practical applications'
         }
     };
-    //data-key属性を一括取得
+    //切り替え対象のテキスト要素を全て取得
     const textKeys = document.querySelectorAll('[data-key]');
-    //日本語の取得
+    //言語選択(日本語)
     const langJa = document.getElementById('lang-ja');
-    //英語の取
+    //言語選択(英語)
     const langEn = document.getElementById('lang-en');
-    //テキストの取得
-    const textlangAll = document.querySelectorAll('[data-role]');
-    //日本語にクリックイベントを指定
+
+    //日本語対象のaタグにクリックイベントを指定
     langJa.addEventListener('click',() =>{
         switchLanguage('ja');
     });
 
-    //Englishにクリックイベントを指定(後でアロー関数に引数enを指定して挙動を確認する)
+    //英語対象のaタグにクリックイベントを指定
     langEn.addEventListener('click',()=>{
         switchLanguage('en');
     });
@@ -52,11 +51,11 @@
     function switchLanguage (lang) {
         textKeys.forEach(el => {
             const key = el.getAttribute("data-key");
-            // console.log("処理対象のkey:", key);
+            //対応する翻訳テキストを取得
             const textJa = Object.keys(translationLanguage.textArea_ja);
             const textEn = Object.keys(translationLanguage.textArea_en);
-            // console.log("日本語配列に含まれてる？", textJa.includes(key));
-            if(textJa.includes(key) && lang ==='ja') { //ここは後に修正する
+            //m該当キーが存在し、選択された言語に応じてテキストを設定
+            if(textJa.includes(key) && lang ==='ja') { 
                 el.textContent = translationLanguage.textArea_ja[key];
             }else if(textEn.includes(key) && lang === 'en') {
                 el.textContent = translationLanguage.textArea_en[key];
